@@ -3,7 +3,7 @@ echo "<h1>Openshift Workshop v2.07</h1> ";
 echo $_SERVER['SERVER_ADDR'];
 echo "<br><hr>";
 echo "<h2>Cidades cadastradas no Banco de Dados:</h2>";
-$conn = new mysql1("mysql", "redhat", "redhat@123", "workshop");
+$conn = new mysqli("10.1.2.250", "redhat", "redhat@123", "workshop");
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
